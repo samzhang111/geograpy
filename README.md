@@ -1,3 +1,6 @@
+Again forked to work with python3
+===
+
 This fork fixes issues with newer versions of nltk.
 
 A rewrite that fixes more issues is available here, please use it instead: https://github.com/Corollarium/geograpy2
