@@ -154,7 +154,7 @@ class PlaceContext(object):
             country = None
 
             try:
-                country = pycountry.countries.get(alpha2=row[3])
+                country = pycountry.countries.get(alpha_2=row[3])
                 country_name = country.name
             except KeyError as e:
                 country_name = row[4]
@@ -170,7 +170,7 @@ class PlaceContext(object):
                 self.country_mentions.append((country_name,1))
 
             if country_name not in self.country_cities:
-                self.country_cities[country.name] = []
+                self.country_cities[country_name] = []
 
             if city_name not in self.country_cities[country_name]:
                 self.country_cities[country_name].append(city_name)
